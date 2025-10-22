@@ -1,22 +1,16 @@
-/* src/components/UserGrid.css */
-/* /* src/components/UserGrid.css */
 .user-grid-container {
   display: grid;
   gap: 24px;
   
-  /* THIS IS THE MAIN CHANGE: 2 columns */
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* Update responsive breaks */
 @media (max-width: 768px) {
   .user-grid-container {
     grid-template-columns: 1fr;
   }
 }
 
-/* Remove the 992px and 576px breakpoints */ */
-/* ... All your existing .user-card, .card-avatar-section, etc. styles ... */
 
 .action-icon-btn {
   flex: 1;
@@ -28,9 +22,8 @@
   color: #777;
 }
 
-/* ADD THIS NEW CLASS */
 .action-icon-btn.liked {
-  color: #ff0000; /* This makes the liked heart red */
+  color: #ff0000; 
 }
 
 .action-icon-btn:hover {
